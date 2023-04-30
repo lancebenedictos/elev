@@ -1,0 +1,114 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.text-shadow-para {
+  text-shadow: 2px 2px #421734;
+}
+
+.text-shadow-header {
+  text-shadow: 7px 5px #421734;
+}
+
+.box-shadow {
+  box-shadow: #24b2d2 5px 5px, #337989 10px 10px, #11809c9e 15px 15px,
+    #07a9ce6f 20px 20px, #0ca7c923 25px 25px;
+}
+
+/* CSS */
+.header-button {
+  background-color: #ef5952;
+  border: 2px solid #422800;
+  border-radius: 30px;
+  box-shadow: #422800 4px 4px 0 0;
+  color: #93ebff;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 0 18px;
+  line-height: 40px;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin-top: 20px;
+}
+
+.header-button:hover {
+  background-color: #f81d11;
+}
+
+.header-button:active {
+  box-shadow: #422800 2px 2px 0 0;
+  transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+  .header-button {
+    min-width: 120px;
+    padding: 0 25px;
+  }
+}
+
+.highlight-container,
+.highlight {
+  position: relative;
+}
+
+.highlight-container {
+  display: inline-block;
+}
+.highlight-container:before {
+  content: " ";
+  display: block;
+  height: 90%;
+  width: 100%;
+  margin-left: -3px;
+  margin-right: -3px;
+  position: absolute;
+  background: #ffd500;
+  transform: rotate(2deg);
+  top: -1px;
+  left: -1px;
+  border-radius: 20% 25% 20% 24%;
+  padding: 10px 3px 3px 10px;
+}
+
+.aspect {
+  aspect-ratio: 3/2;
+  object-fit: contain;
+  width: 15%;
+  filter: grayscale(100%);
+  opacity: 0.4;
+
+  -webkit-filter: grayscale(100%);
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.no-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scroll {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.parallax {
+  background-attachment: fixed;
+}
+
+.size:has(input[name="size"]:checked) {
+  border-color: black;
+}
+/* 
+.size input[name="size"]:checked + label {
+  background-color: #421734;
+} */
+
+.comic-text {
+  font-family: "Bangers", cursive;
+}
