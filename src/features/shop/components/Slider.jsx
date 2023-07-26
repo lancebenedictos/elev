@@ -4,19 +4,22 @@ import { Carousel } from "react-responsive-carousel";
 import { headerImgs } from "../../../utils/seed";
 function Slider() {
   return (
-    <Carousel
-      autoPlay={true}
-      emulateTouch={true}
-      interval={1000}
-      showArrows={false}
-      showStatus={false}
-      infiniteLoop={true}
-      showThumbs={false}
-    >
-      {headerImgs.map((img) => (
-        <img src={img} id={img} />
-      ))}
-    </Carousel>
+    <div className="flex flex-center items-center">
+      <Carousel
+        autoPlay={true}
+        emulateTouch={true}
+        interval={1000}
+        showArrows={false}
+        showStatus={false}
+        infiniteLoop={true}
+        showThumbs={false}
+        className="w-[70%] mx-auto"
+      >
+        {headerImgs.map((img, index) => (
+          <img src={img} id={img} key={index} />
+        ))}
+      </Carousel>
+    </div>
   );
 }
 

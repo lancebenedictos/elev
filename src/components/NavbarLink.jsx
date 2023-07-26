@@ -10,8 +10,7 @@ function NavbarLink(props) {
         preventScrollReset={true}
         style={({ isActive, isPending }) => {
           return {
-            background: isActive && !props.mobile ? "#ffd500" : "",
-            color: !isActive ? "black" : "white",
+            color: "black",
           };
         }}
         className={`py-2 px-4 rounded-3xl outline-none ${props.className}`}
