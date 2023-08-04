@@ -4,7 +4,7 @@ import { AiOutlineInstagram, AiOutlineFacebook } from "react-icons/ai";
 import { TfiTwitter } from "react-icons/tfi";
 function Footer() {
   return (
-    <div className=" bg-[#D5DD0B] p-2 py-5 mt-6 ">
+    <div className=" bg-[#D5DD0B] p-2 py-5 mt-auto ">
       <Container>
         <div className="flex flex-col gap-4 lg:grid lg:grid-cols-2 ">
           <span className="flex flex-col gap-2">

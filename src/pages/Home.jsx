@@ -21,7 +21,7 @@ function Home() {
       <NewDropList />
       {/* Main end */}
 
-      <Section className="relative flex flex-col h-screen bg-second-shoe bg-cover bg-center bg-no-repeat parallax">
+      <Section className="relative flex flex-col h-screen bg-second-shoe bg-cover bg-center bg-no-repeat parallax max-w-3xl mx-auto">
         {/* Logo */}
         <span className="left-1/2 -translate-x-1/2 absolute top-3 flex items-center flex-col ">
           <img src={PaintedLogo} className="w-14" />
@@ -55,7 +55,7 @@ function Home() {
       </Section>
 
       <Container>
-        <span className=" border-b-2 p-2 flex flex-col items-center gap-4">
+        <span className=" border-b-2 p-2 flex flex-col items-center gap-4 my-8">
           <h2 className=" font-extrabold text-3xl underline underline-offset-8">
             Who are we?
           </h2>

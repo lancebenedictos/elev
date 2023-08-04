@@ -6,12 +6,12 @@ import { usersSeed } from "../utils/seed";
 
 function Reviews() {
   return (
-    <div className=" flex flex-col items-center  w-full ">
+    <div className=" flex flex-col items-center  w-full">
       <h2 className=" font-extrabold text-3xl underline underline-offset-8">
         Reviews
       </h2>
 
-      <div className="flex overflow-x-scroll w-full gap-1 no-scroll my-4 overflow-y-hidden">
+      <div className="flex overflow-x-scroll w-full gap-1 no-scroll my-4 overflow-y-hidden items-center justify-center">
         {usersSeed?.map((user) => {
           return <Review user={user} id={user.userId} />;
         })}

@@ -26,18 +26,16 @@ function ItemInfo() {
   return (
     <div className=" flex flex-col py-3">
       {shoe ? (
-        <>
-          <Container>
-            <div className="px-2">
-              <h1 className=" font-semibold text-xl">{shoe.name}</h1>
-              <h2>{shoe.category}</h2>
-              <p>${shoe.price}</p>
-            </div>
-          </Container>
-          <img src={shoe.img} />
+        <Container>
+          <div className="flex gap-2 mt-3 flex-col lg:flex-row mx-3 lg:mx-0">
+            <img src={shoe.img} className="w-full lg:w-1/2" />
 
-          <Container>
-            <div className="px-2 flex flex-col gap-2">
+            <div className="flex flex-col gap-2">
+              <div className="px-2">
+                <h1 className=" font-semibold text-xl">{shoe.name}</h1>
+                <h2>{shoe.category}</h2>
+                <p>${shoe.price}</p>
+              </div>
               <p>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum
                 vitae maxime reiciendis? Quidem, velit assumenda perspiciatis
@@ -70,14 +68,14 @@ function ItemInfo() {
               {success ? <p className=" text-red-600">{success}</p> : null}
 
               <button
-                className=" py-3 rounded-3xl text-white bg-black"
+                className=" py-3 rounded-3xl text-white bg-black mt-auto"
                 onClick={onAddToCart}
               >
                 Add to cart
               </button>
             </div>
-          </Container>
-        </>
+          </div>
+        </Container>
       ) : (
         <>404</>
       )}

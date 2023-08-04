@@ -4,7 +4,7 @@ import { Form } from "../features/login";
 
 function Login() {
   return (
-    <div className="flex-grow p-2">
+    <div className="flex-grow p-2 flex justify-center items-center">
       <Container>
         <Form />
       </Container>
